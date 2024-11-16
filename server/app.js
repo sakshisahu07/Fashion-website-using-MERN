@@ -4,6 +4,7 @@ const mongoose=require("mongoose")
 const bodyparser = require('body-parser')
 const cors= require("cors");
 const AdminRoute=require("./routes/adminRoute")
+
 require("dotenv").config()
 const PORT=process.env.PORT||3000
 app.use(cors())

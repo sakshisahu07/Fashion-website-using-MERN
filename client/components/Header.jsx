@@ -6,13 +6,12 @@ import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import axios from "axios";
+import {useNavigate} from "react-router-dom"
+import { message } from 'antd';
 const Header=()=>{
     const [username,setUsername]=useState("");
     const [password,setPassword]=useState("");
-    
-    
-  
-
+    const navigate=useNavigate();
     const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -20,6 +19,17 @@ const Header=()=>{
 
     const handleSubmit=()=>{
         let api="http://localhost:8000/adminuser/usercheck";
+        axios.post(api,{user:username,password:password}).then((res)=>{
+            console.log(res);
+
+            if(res.status==200){
+              message.success("You are Succesfully Login!")
+              navigate("/admin")
+            }
+            else{
+              message.error(response.data.msg)
+            }
+        })
     }
     return(
         <>

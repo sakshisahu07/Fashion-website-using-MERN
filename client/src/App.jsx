@@ -9,6 +9,8 @@ import Shop from "../pages/Shop";
 import Product from "../pages/Product";
 import Search from "../pages/Search";
 import Contact from "../pages/Contact";
+import AdminDashboard from "./admin/AdminDashboard";
+import InsertProduct from "./admin/InsertProduct";
 
 
 const App=()=>{
@@ -26,6 +28,13 @@ const App=()=>{
 
     </Route>
     </Routes>
+    <Routes>
+           <Route path="/admin" element={<AdminDashboard/>} >
+             <Route path="insertpro" element={<InsertProduct/>}/>
+           
+           </Route>
+        </Routes>
+    
     </BrowserRouter>
     </>
   )
