@@ -6,7 +6,7 @@
 .space{
     margin-left: 20px;
 }
-.#adminHeader
+#adminHeader
 {
     height: 100px;
     background-color: lightblue;
@@ -34,3 +34,89 @@
 {
     color: whitesmoke;
 }
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    margin: 20px;
+    max-width: 250px;
+  }
+  
+  .footer-section h4,
+  .footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffd700;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ffd700;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #bbb;
+  }
+  
+  .footer-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .footer-section form button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #ffd700;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-section form button:hover {
+    background-color: #ffa500;
+  }
