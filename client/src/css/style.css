@@ -34,6 +34,11 @@
 {
     color: whitesmoke;
 }
+#carddata{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .footer {
     background-color: #333;
     color: #fff;
