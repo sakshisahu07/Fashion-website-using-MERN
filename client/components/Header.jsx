@@ -8,6 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 import axios from "axios";
 import {useNavigate} from "react-router-dom"
 import { message } from 'antd';
+import { useSelector } from "react-redux";
 const Header=()=>{
     const [username,setUsername]=useState("");
     const [password,setPassword]=useState("");
@@ -16,6 +17,10 @@ const Header=()=>{
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+
+  const CardData=useSelector((state)=>state.mycard.card)
+  const cardLength=CardData.length;
 
     const handleSubmit=()=>{
         let api="http://localhost:8000/adminuser/usercheck";
@@ -34,14 +39,18 @@ const Header=()=>{
     return(
         <>
               <div id="header">
-   
-            <FaShoppingCart  />
+                {cardLength}
+                <a href="#" onClick={()=>{navigate("/carddata")}}>
+                    <FaShoppingCart  />
+                </a>
+            
    
             <a href="#" onClick={handleShow} > 
             <RiAdminFill className="space" />
             </a>
-   
+          
             <FaSearch className="space" />
+            </div>
 
             <Modal show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
@@ -69,7 +78,7 @@ const Header=()=>{
           </Button>
         </Modal.Footer>
       </Modal>
-   </div>
+ 
 
         
         </>

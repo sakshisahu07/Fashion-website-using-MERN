@@ -11,6 +11,8 @@ import Search from "../pages/Search";
 import Contact from "../pages/Contact";
 import AdminDashboard from "./admin/AdminDashboard";
 import InsertProduct from "./admin/InsertProduct";
+import CardData from "../pages/CardData";
+import Checkout from "../pages/Checkout";
 
 
 const App=()=>{
@@ -25,6 +27,8 @@ const App=()=>{
     <Route path="product" element={<Product/>}/>
     <Route path="search" element={<Search/>}/>
     <Route path="contact" element={<Contact/>}/>
+    <Route path="carddata" element={<CardData/>}/>
+    <Route path="checkout" element={<Checkout/>}/>
 
     </Route>
     </Routes>

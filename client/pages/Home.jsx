@@ -6,9 +6,13 @@ import { useState,useEffect } from 'react';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useDispatch } from 'react-redux';
+import { addToCard } from '../cardSlice';
+
 
 const Home=()=>{
   const [mydata,setMydata]=useState([])
+  const dispatch=useDispatch();
 
 
   const loadData=()=>{
@@ -21,6 +25,10 @@ const Home=()=>{
   useEffect(()=>{
     loadData()
   },[])
+
+  const addcartData=(id,name,desc,categ,price,image)=>{
+      dispatch(addToCard({id:id,name:name,description:desc,category:categ ,price:price,image:image,qnty:1}))
+  }
   
   const ans=mydata.map((key)=>{
     return(
@@ -33,7 +41,10 @@ const Home=()=>{
           {key.description}
           {key.category}
         </Card.Text>
-        <Button variant="primary">Add To cart</Button>
+        <Button variant="primary"
+        onClick={()=>{addcartData(key._id,key.name,key.description,key.category,key.price,key.image)}}
+        
+        >Add To cart</Button>
       </Card.Body>
     </Card>
       </>

@@ -18,6 +18,8 @@ const Topmenu=()=>{
             <Nav.Link as ={Link} to="product">Product</Nav.Link>
             <Nav.Link as ={Link} to="search">Search</Nav.Link>
             <Nav.Link as ={Link} to="contact">Contact</Nav.Link>
+            <Nav.Link as ={Link} to="carddata">CardData</Nav.Link>
+
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Mens</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Women</NavDropdown.Item>
