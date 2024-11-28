@@ -8,7 +8,7 @@ import Home from "../pages/Home";
 import Shop from "../pages/Shop";
 import Product from "../pages/Product";
 import Search from "../pages/Search";
-import Contact from "../pages/Contact";
+import ProductDetail from "../pages/ProductDetail";
 import AdminDashboard from "./admin/AdminDashboard";
 import InsertProduct from "./admin/InsertProduct";
 import CardData from "../pages/CardData";
@@ -26,7 +26,7 @@ const App=()=>{
     <Route path="shop" element={<Shop/>}/>
     <Route path="product" element={<Product/>}/>
     <Route path="search" element={<Search/>}/>
-    <Route path="contact" element={<Contact/>}/>
+    <Route path="prodetail" element={<ProductDetail/>}/>
     <Route path="carddata" element={<CardData/>}/>
     <Route path="checkout" element={<Checkout/>}/>
 

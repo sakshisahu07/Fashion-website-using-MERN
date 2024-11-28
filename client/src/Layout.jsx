@@ -6,8 +6,10 @@ import Header from "../components/Header";
 const Layout=()=>{
     return(
       <>
-     <Header/>
+      <div id="headerPart">
+      <Header/>
       <Topmenu/>
+      </div>
       <Outlet/>
       <Footer/>
       </>

@@ -39,6 +39,25 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+#headerPart{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+#payPage
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+#payForm
+{
+    width: 50%;
+}
+#payMethod
+{
+    width: 50%;
+}
 .footer {
     background-color: #333;
     color: #fff;
