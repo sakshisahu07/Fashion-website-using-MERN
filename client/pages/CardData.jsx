@@ -4,7 +4,7 @@ import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
 import { qntyIncrement,qntyDecrement,datadlt } from '../cardSlice';
 import { Button } from "antd";
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 const CardData=()=>{
     const myCard=useSelector((state=>state.mycard.card))
     const dispatch=useDispatch();
