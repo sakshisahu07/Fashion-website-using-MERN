@@ -1,13 +1,12 @@
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from "../images/a1.jpg"
-import img2 from "../images/a2.jpg"
-import img3 from "../images/a3.jpg"
+
 import { useState,useEffect } from 'react';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useDispatch } from 'react-redux';
 import { addToCard } from '../cardSlice';
+
 
 
 const Home=()=>{
@@ -33,6 +32,7 @@ const Home=()=>{
   const ans=mydata.map((key)=>{
     return(
       <>
+
        <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={key.image} style={{height:'300px'}} />
       <Card.Body>
@@ -82,6 +82,10 @@ const Home=()=>{
      <h1 align="center"> Our Trending Collections</h1>
         <div id="carddata">
         {ans}
+        </div>
+{/* ============================================================================================ */}
+        <div >
+      <img src="https://i.pinimg.com/736x/8a/14/63/8a1463954389e157aebff5bff7494ea5.jpg" alt=""  style={{width:"1500px", height:"500px"}}/>
         </div>
     
         </>

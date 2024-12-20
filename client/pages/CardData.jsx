@@ -21,7 +21,7 @@ const CardData=()=>{
         let sno=0;
         let TotalAmount=0
         const ans=myCard.map((key)=>{
-            TotalAmount=key.price*key.qnty;
+            TotalAmount+=key.price*key.qnty;
             sno++;
         return(
             <>
@@ -84,7 +84,7 @@ const CardData=()=>{
             <th></th>
             <th></th>
             <th>Net Amount</th>
-            <th>{}TotalAmount</th>
+            <th>{TotalAmount}</th>
         </tr>
         <tr>
             <th></th>

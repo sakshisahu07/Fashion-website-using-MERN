@@ -122,20 +122,6 @@ const CheckOut=()=>{
         )
     })
 
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
     return(
         <>
         <div id="payPage">
@@ -214,8 +200,6 @@ const CheckOut=()=>{
           <th></th>
           <th>  </th>
           <th> 
-
-      
 
           </th>
           <th> </th>
